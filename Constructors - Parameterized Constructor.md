@@ -1,32 +1,29 @@
 # Exp.No:21  
 ## Constructors - Parameterized Constructor
 
----
-
 ### AIM  
-To write a Python code to create a class for a person with a parameterized constructor, which will take the `name` and `userid` of the person as parameters and print the `userid` of the person.
-
----
+The aim of this task is to create a Python class that represents a "Person." This class should have a parameterized constructor that accepts the name and userid of the person, and prints the userid when an instance of the class is created.
 
 ### ALGORITHM
-
-1. Begin the program.  
-2. Define a `person` class.  
-3. The `person` class should have a parameterized `__init__` method that accepts two parameters: `name` and `userid`.  
-4. Inside the `__init__` method, assign the `name` to `self.name` and the `userid` to `self.userid`.  
-5. Print the `self.userid`.  
-6. Prompt the user to enter their `name` (string) and `userid`.  
-7. Create an instance `s1` of the `person` class by passing the entered `name` and `userid` to the constructor.  
-8. Terminate the program.
-
----
+1.Define a class named Person.
+2.Create the __init__ method (constructor):
+This method should accept two parameters: name and userid.
+The __init__ method should initialize these parameters as instance variables.
+3.Print the userid inside the constructor to display it when a new object of the class is created.
+4.Test the class by creating an instance of Person and passing the name and userid as arguments.
 
 ### PROGRAM
-
-```
-
-```
+class Person:
+    def __init__(self,name,userid):
+        self.name=name
+        self.userid=userid
+name=input()
+userid=input()
+det=Person(name,userid)
+print(getattr(det,"userid"))
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/3477cb1a-4123-4951-8dd7-2177cf6b119c)
 
 ### RESULT
+Thus,the Python class that represents a "Person." This class should have a parameterized constructor that accepts the name and userid of the person, and prints the userid when an instance of the class is created was implemented and successfully executed.
